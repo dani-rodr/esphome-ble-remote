@@ -175,7 +175,7 @@ namespace esphome
 
         case HID_ITEM_TYPE_TAG_USAGE_PAGE:
         {
-          ESP_LOGD(TAG, "Usage page: %X", report_item_data);
+          ESP_LOGD(TAG, "Usage page: %lx", report_item_data);
           state_table.usage_page = report_item_data;
           break;
         }
